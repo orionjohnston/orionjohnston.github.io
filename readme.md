@@ -1,85 +1,33 @@
-# Gabriel Johnston - Personal Website
- https://orionjohnston.github.io/Mywebsitetest/
+# Gabriel Johnston — personal website
 
-This repository contains the code for Gabriel Johnston's personal website, showcasing both his academic research in geophysics and his musical career as an organist specializing in improvisation.
+Live at https://orionjohnston.github.io/Website2/
 
-## Features
+A static site with no build step: three HTML pages, one stylesheet, one script.
 
-- Responsive design for all device sizes
-- Interactive elements including sliders, tabs, and animations
-- Separate sections for academic and musical pursuits
-- Contact form for inquiries
-- YouTube integration for music performances
+| File | What it is |
+|------|------------|
+| `index.html` | Home: introduction, featured recording, recent news, contact |
+| `academic.html` | Research, publications, presentations, positions, teaching, awards |
+| `music.html` | Recordings, professional experience, ensembles, teachers |
+| `404.html` | Not-found page served by GitHub Pages |
+| `css/site.css` | All styles |
+| `js/script.js` | Mobile menu, click-to-play videos, homepage globe |
+| `images/` | Photos, video thumbnails, favicon |
+| `docs/` | Downloadable CVs (PDF) |
 
-## Website Structure
+## Preview locally
 
-- `index.html` - Homepage with overview of both academic and music aspects
-- `academic.html` - Detailed academic portfolio, research, publications
-- `music.html` - Music portfolio, performances, recordings, and instruments
-- `css/style.css` - All styling for the website
-- `js/script.js` - Interactive JavaScript elements
-- `images/` - Contains all website images
+```
+python3 -m http.server 8000
+```
 
-## Setting Up GitHub Pages
+Then open http://localhost:8000.
 
-1. **Push your repository to GitHub**
-   ```
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/yourusername/yourrepository.git
-   git push -u origin main
-   ```
+## Publish
 
-2. **Enable GitHub Pages**
-   - Go to your repository on GitHub
-   - Click on "Settings"
-   - Scroll down to the "GitHub Pages" section
-   - Under "Source", select "main" branch
-   - Click "Save"
+GitHub Pages serves the `main` branch, so pushing to `main` updates the live site within a minute or two.
 
-3. **Access your website**
-   - Your website will be available at `https://yourusername.github.io/yourrepository/`
-   - It may take a few minutes for your site to be published
+## Updating content
 
-## Customization
-
-### Images
-- Replace the placeholder images in the `images/` directory with your own
-- Make sure to maintain the same file names or update the references in the HTML files
-
-### Content
-- Update the text in the HTML files to reflect your own information
-- Modify the publications, projects, performances, and recordings sections as needed
-
-### Contact Form
-- The contact form is set up to work with Formspree
-- Replace the Formspree URL in the form action with your own
-
-## Local Development
-
-To run this website locally:
-
-1. Clone the repository
-   ```
-   git clone https://github.com/yourusername/yourrepository.git
-   ```
-
-2. Open the project folder in your preferred code editor
-
-3. Launch the site using a local server
-   - If you have Python installed:
-     ```
-     python -m http.server
-     ```
-   - If you have Node.js installed:
-     ```
-     npx serve
-     ```
-
-4. View the site in your browser at `http://localhost:8000` or the port provided by your server
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+- **CVs**: replace `docs/Gabriel_Johnston_CV.pdf` and `docs/Gabriel_Johnston_Music_CV.pdf`, keeping the filenames.
+- **A new video**: copy one of the `<a class="video">` blocks in `music.html`, change the YouTube ID in both `href` and `data-video-id`, and add a thumbnail to `images/`.

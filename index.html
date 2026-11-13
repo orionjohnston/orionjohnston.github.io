@@ -2,35 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Johnston | Geophysicist & Organist</title>
-    <meta name="description" content="Gabriel Johnston - PhD Candidate in Geophysics at University of Florida and Organist specializing in improvisation">
-        <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gabriel Johnston | Geophysicist &amp; Organist</title>
+    <meta name="description" content="Gabriel Johnston, PhD: geophysicist studying mantle dynamics at the University of Florida, and organist and choirmaster at Calvary Episcopal Church.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gabriel Johnston | Geophysicist &amp; Organist">
+    <meta property="og:description" content="Mantle geodynamics research, and organ performance and improvisation.">
+    <meta property="og:image" content="https://orionjohnston.github.io/Website2/images/gabriel-headshot.jpg">
+    <meta name="theme-color" content="#1e5f8e">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&amp;family=Open+Sans:ital,wght@0,400;0,600;1,400&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/site.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gabriel Johnston",
+        "honorificSuffix": "PhD",
+        "jobTitle": "Courtesy Assistant Professor",
+        "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Florida, Department of Geological Sciences"
+        },
+        "alumniOf": "University of Florida",
+        "sameAs": [
+            "https://scholar.google.com/citations?user=RMsvwOsAAAAJ",
+            "https://www.youtube.com/@orionjohnston963",
+            "https://github.com/orionjohnston"
+        ]
+    }
+    </script>
 </head>
 <body class="home-page">
-    <div class="preloader">
-        <div class="spinner"></div>
-    </div>
-    <!-- Navigation -->
-    <nav id="main-nav">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav id="main-nav" aria-label="Main">
         <div class="container">
-            <div class="logo">
-                <a href="index.html">Gabriel Johnston</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
+            <div class="logo"><a href="index.html">Gabriel Johnston</a></div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="academic.html">Academic</a></li>
                 <li><a href="music.html">Music</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -38,223 +54,177 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="vanta-bg">
-        <div class="hero-content">
-            <div class="container split-layout">
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero" id="vanta-bg">
+            <div class="container hero-inner">
                 <div class="hero-text">
                     <h1 class="hero-title">Gabriel Johnston</h1>
-                    <h2 class="hero-subtitle">PhD Candidate in Geophysics & Organist</h2>
-                    <p class="hero-description">Exploring the depths of Earth's mantle and the heights of musical expression</p>
+                    <p class="hero-subtitle">Geophysicist &amp; Organist</p>
+                    <p class="hero-description">I study how Earth&rsquo;s deep mantle moves and mixes, by tracking particles through time-reversed convection models. I am also an organist and choirmaster, with improvisation at the center of my playing.</p>
+                    <ul class="hero-roles">
+                        <li>Courtesy Assistant Professor, Geological Sciences, University of Florida</li>
+                        <li>Adjunct Faculty, Earth Sciences, St. Petersburg College</li>
+                        <li>Organist &amp; Choirmaster, Calvary Episcopal Church</li>
+                    </ul>
                     <div class="hero-buttons">
-                        <a href="academic.html" class="btn btn-primary">Academic Work</a>
-                        <a href="music.html" class="btn btn-secondary">Musical Journey</a>
+                        <a href="academic.html" class="btn btn-blue">Research</a>
+                        <a href="music.html" class="btn btn-plum">Music</a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="profile-container">
-                        <img src="images/gabriel-headshot.jpg" alt="Gabriel Johnston" class="profile-img">
-                    </div>
+                <div class="hero-photo">
+                    <img src="images/gabriel-headshot.jpg" alt="Gabriel Johnston standing at an organ console" width="533" height="800">
                 </div>
             </div>
-        </div>
-        <div class="hero-scroll">
-            <a href="#about" class="scroll-down">
-                <span class="scroll-text">Scroll</span>
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>About Me</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="split-layout">
-                <div class="about-academic">
-                    <h3>The Scientist</h3>
-                    <p>I'm a PhD Candidate in Geologic Sciences at the University of Florida, working with Professor Alessandro Forte. My research focuses on computational geophysics, specifically developing advanced particle-tracking methods in 4D global mantle convection models that integrate seismic tomographic and geochemical data.</p>
-                    <p>My work aims to clarify the origin and evolution of hotspot-related chemical anomalies by reconstructing mantle flow through geologic time, with particular focus on the DUPAL Geochemical Anomaly in the South Atlantic and Southwest Indian Oceans.</p>
-                    <a href="academic.html" class="btn btn-tertiary">Explore My Research</a>
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About</h2>
+                    <div class="divider"></div>
                 </div>
-                <div class="about-music">
-                    <h3>The Musician</h3>
-                    <p>I serve as interim organist and choir director at Calvary Episcopal Church in Indian Rocks Beach, Florida. I'm passionate about organ improvisation, having studied with renowned improvisers in Paris including Sophie-V&eacute;ronique Cauchefer-Choplin, Jeffrey Brillhart, and Fr&eacute;d&eacute;ric Blanc.</p>
-                    <p>In 2025, I received the Raymond Glover Grant for Episcopal Liturgical Music from the Association of Anglican Musicians to study choral Evensong and liturgical improvisation in Florida and Paris.</p>
-                    <a href="music.html" class="btn btn-tertiary">Discover My Music</a>
+                <div class="grid-2">
+                    <div class="card about-card accent-blue">
+                        <h3>The Scientist</h3>
+                        <p>I completed my PhD in Geology at the University of Florida in 2026, advised by Professor Alessandro Forte and working in conjunction with the Institut de Physique du Globe de Paris. I am now a Courtesy Assistant Professor in UF&rsquo;s Department of Geological Sciences and teach Earth Sciences at St. Petersburg College.</p>
+                        <p>My research combines mantle geodynamics with isotope geochemistry, using particle tracking in convection models constrained by seismic tomography to ask where hotspot lavas come from and how well the mantle is mixed.</p>
+                        <a href="academic.html" class="btn btn-outline">Research &amp; publications</a>
+                    </div>
+                    <div class="card about-card accent-plum">
+                        <h3>The Musician</h3>
+                        <p>I am Organist &amp; Choirmaster at Calvary Episcopal Church in Indian Rocks Beach, Florida, where I direct the adult choir and bell choir and oversee the rebuilding of the music program after Hurricane Helene. I also sing bass with the Master Chorale of Tampa Bay.</p>
+                        <p>I have studied improvisation with Sophie-V&eacute;ronique Cauchefer-Choplin, Jeffrey Brillhart, Fr&eacute;d&eacute;ric Blanc, Samuel Li&eacute;geon, David Cassan, and Nicola Canzano, and received the 2025 Raymond Glover Grant from the Association of Anglican Musicians.</p>
+                        <a href="music.html" class="btn btn-outline">Music &amp; recordings</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Dual Interest Section -->
-    <section class="dual-interest">
-        <div class="container">
-            <div class="section-header">
-                <h2>Dual Passions</h2>
-                <div class="divider"></div>
-                <p>My work in science and music represent complementary aspects of my intellectual and creative life</p>
-            </div>
-            <div class="interest-cards">
-                <div class="interest-card" data-interest="academic">
-                    <div class="interest-icon">
-                        <i class="fas fa-globe-americas"></i>
-                    </div>
-                    <h3>Geophysics</h3>
-                    <p>Exploring Earth's interior dynamics through computational modeling and data integration</p>
-                    <a href="academic.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        <!-- Featured recording -->
+        <section class="section alt accent-plum">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Listen</h2>
+                    <div class="divider"></div>
                 </div>
-                <div class="interest-card" data-interest="music">
-                    <div class="interest-icon">
-                        <i class="fas fa-music"></i>
+                <div class="split">
+                    <a class="video" href="https://www.youtube.com/watch?v=EM6N63_UgV0" data-video-id="EM6N63_UgV0" data-video-title="Improvised Sinfonietta">
+                        <img src="images/video-sinfonietta.jpg" alt="Gabriel Johnston playing the organ at Calvary Episcopal Church" width="1280" height="720" loading="lazy">
+                        <span class="video-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+                        <span class="video-duration">14:35</span>
+                    </a>
+                    <div>
+                        <h3 class="lead-title">Improvised Sinfonietta</h3>
+                        <p>Improvised for the dedication of the new organ at Calvary Episcopal Church, Indian Rocks Beach, Florida.</p>
+                        <p><a href="music.html#recordings" class="text-link">More recordings <i class="fas fa-arrow-right"></i></a></p>
                     </div>
-                    <h3>Organ Performance</h3>
-                    <p>Specializing in improvisation, liturgical music, and collaborative performances</p>
-                    <a href="music.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Recent Highlights -->
-    <section class="highlights">
-        <div class="container">
-            <div class="section-header">
-                <h2>Recent Highlights</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="highlights-slider" id="highlights-slider">
-                <div class="highlight-slide">
-                    <div class="highlight-content">
-                        <span class="highlight-date">2025</span>
-                        <h3>First-Author Paper Under Review</h3>
-                        <p>"Southern Hemisphere Hotspots Traced Back to Distinct Paleo-Subduction Zones" &mdash; submitted for peer review with collaborators from UF, IPGP Paris, and Universit&eacute; Paris Cit&eacute;.</p>
-                        <a href="academic.html#publications" class="highlight-link">View Publications</a>
-                    </div>
+        <!-- Recent -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Recent</h2>
+                    <div class="divider"></div>
                 </div>
-                <div class="highlight-slide">
-                    <div class="highlight-content">
-                        <span class="highlight-date">June &ndash; December 2025</span>
-                        <h3>Invited Scientist, IPGP Paris</h3>
-                        <p>Spent six months at the Institut de Physique du Globe de Paris working with an international team on reconciling geochemical observations with mantle convection models.</p>
-                        <a href="academic.html" class="highlight-link">View Research</a>
+                <div class="grid-3">
+                    <div class="card accent-blue">
+                        <span class="pill">September 2026</span>
+                        <h3>New appointments</h3>
+                        <p>Courtesy Assistant Professor at the University of Florida, and Adjunct Faculty in Earth Sciences at St. Petersburg College.</p>
                     </div>
-                </div>
-                <div class="highlight-slide">
-                    <div class="highlight-content">
-                        <span class="highlight-date">2025</span>
-                        <h3>Raymond Glover Grant Recipient</h3>
-                        <p>Awarded the $3,500 Raymond Glover Grant by the Association of Anglican Musicians to study choral Evensong and liturgical improvisation in Florida and Paris.</p>
-                        <a href="music.html" class="highlight-link">Learn More</a>
+                    <div class="card accent-blue">
+                        <span class="pill">Summer 2026</span>
+                        <h3>PhD completed</h3>
+                        <p>Thesis: <em>Reconciling Hotspot Geochemistry with Mantle Dynamics through Particle Tracking</em>.</p>
                     </div>
-                </div>
-                <div class="highlight-slide">
-                    <div class="highlight-content">
-                        <span class="highlight-date">April 2025</span>
+                    <div class="card accent-plum">
+                        <span class="pill">July 2026</span>
+                        <h3>Haarlem International Organ Festival</h3>
+                        <p>Participant in the Advanced Improvisation Course with Franz Danksagm&uuml;ller.</p>
+                    </div>
+                    <div class="card accent-blue">
+                        <span class="pill">June 2026</span>
+                        <h3>Ada Lovelace Workshop, Prague</h3>
+                        <p>Presented a global voxel-based analysis of residence time and flux from backward-in-time mantle convection.</p>
+                    </div>
+                    <div class="card accent-blue">
+                        <span class="pill">May 2026</span>
                         <h3>EGU General Assembly, Vienna</h3>
-                        <p>Presented "Playing with Edges: The Influence of Arbitrary Definitions on Hotspot&ndash;LLSVP Correlations" at the European Geosciences Union General Assembly.</p>
-                        <a href="academic.html#publications" class="highlight-link">View Publication</a>
+                        <p>Presented &ldquo;How Well Is the Mantle Sampled?&rdquo;</p>
                     </div>
-                </div>
-                <div class="highlight-slide">
-                    <div class="highlight-content">
-                        <span class="highlight-date">September 2024</span>
-                        <h3>Ada Lovelace Workshop, S&egrave;te</h3>
-                        <p>Presented on the origin of the DUPAL Geochemical Anomaly at the Ada Lovelace Workshop on Modelling Mantle and Lithosphere Dynamics in S&egrave;te, France.</p>
-                        <a href="academic.html#publications" class="highlight-link">View Publication</a>
+                    <div class="card accent-blue">
+                        <span class="pill">2026</span>
+                        <h3>John Ridge Award</h3>
+                        <p>For outstanding achievement in research as a graduate student.</p>
                     </div>
                 </div>
             </div>
-            <div class="slider-controls">
-                <button class="slider-prev" id="slider-prev"><i class="fas fa-chevron-left"></i></button>
-                <div class="slider-dots" id="slider-dots"></div>
-                <button class="slider-next" id="slider-next"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get in Touch</h2>
-                <div class="divider"></div>
-                <p>Have questions about my research or interested in musical collaborations?</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+        <!-- Contact -->
+        <section id="contact" class="section alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get in Touch</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="contact-grid">
+                    <div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:orion1234@ufl.edu">orion1234@ufl.edu</a></p>
+                            </div>
                         </div>
-                        <div class="contact-text">
-                            <h3>Email</h3>
-                            <p><a href="mailto:orion1234@ufl.edu">orion1234@ufl.edu</a></p>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div>
+                            <div>
+                                <h3>Affiliation</h3>
+                                <p>Department of Geological Sciences<br>University of Florida, Gainesville, FL</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Phone</h3>
-                            <p><a href="tel:+17274554555">+1 (727) 455-4555</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Location</h3>
-                            <p>Department of Geologic Sciences<br>University of Florida<br>Gainesville, FL, USA</p>
+                        <div class="social-links">
+                            <a href="https://scholar.google.com/citations?user=RMsvwOsAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="social-link" aria-label="Google Scholar"><i class="fab fa-google-scholar" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/@orionjohnston963" target="_blank" rel="noopener" class="social-link" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                            <a href="https://github.com/orionjohnston" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <div class="social-links">
-                        <a href="https://www.youtube.com/@orionjohnston963" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
-                        <a href="https://github.com/orionjohnston" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <div class="contact-cta">
+                        <p>For questions about my research, or for music inquiries, email is the best way to reach me.</p>
+                        <a href="mailto:orion1234@ufl.edu" class="btn btn-accent"><i class="fas fa-envelope" aria-hidden="true"></i> Send email</a>
                     </div>
                 </div>
-                <div class="contact-cta">
-                    <p class="contact-cta-text">I'm currently seeking postdoctoral positions in computational geophysics, mantle dynamics, and related fields. Feel free to reach out.</p>
-                    <a href="mailto:orion1234@ufl.edu" class="btn btn-primary"><i class="fas fa-envelope"></i> Send Email</a>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Gabriel Johnston</h3>
-                    <p>PhD Candidate in Geophysics & Organist</p>
+            <div class="footer-top">
+                <div>
+                    <h2>Gabriel Johnston</h2>
+                    <p>Geophysicist &amp; Organist</p>
                 </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="academic.html">Academic</a></li>
-                        <li><a href="music.html">Music</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academic.html">Academic</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Gabriel Johnston. All rights reserved.</p>
-                <a href="#main-nav" class="back-to-top">
-                    <i class="fas fa-arrow-up"></i>
-                </a>
+                <p>&copy; 2026 Gabriel Johnston</p>
+                <a href="#main">Back to top <i class="fas fa-arrow-up" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-<script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

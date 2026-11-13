@@ -2,407 +2,311 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Music | Gabriel Johnston</title>
-    <meta name="description" content="The musical journey of Gabriel Johnston, organist, choirmaster, and improviser specializing in liturgical music and collaborative performance">
-        <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/music.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Gabriel Johnston, organist and choirmaster at Calvary Episcopal Church, Indian Rocks Beach, Florida: recordings, improvisation, and liturgical music.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Music | Gabriel Johnston">
+    <meta property="og:description" content="Organist and choirmaster: recordings, improvisation, and liturgical music.">
+    <meta property="og:image" content="https://orionjohnston.github.io/Website2/images/video-sinfonietta.jpg">
+    <meta name="theme-color" content="#6a3775">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&amp;family=Open+Sans:ital,wght@0,400;0,600;1,400&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/site.css">
 </head>
 <body class="music-page">
-    <!-- Navigation -->
-    <nav id="main-nav">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav id="main-nav" aria-label="Main">
         <div class="container">
-            <div class="logo">
-                <a href="index.html">Gabriel Johnston</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu">
+            <div class="logo"><a href="index.html">Gabriel Johnston</a></div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="academic.html">Academic</a></li>
-                <li><a href="music.html" class="active">Music</a></li>
+                <li><a href="music.html" aria-current="page">Music</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="page-hero music-hero">
-        <div class="container">
-            <h1>Musical Journey</h1>
-            <p>Organ performance, improvisation, and liturgical music</p>
-        </div>
-    </section>
-
-    <!-- Music Bio -->
-    <section class="music-bio">
-        <div class="container">
-            <div class="section-header">
-                <h2>About My Music</h2>
-                <div class="divider"></div>
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Music</h1>
+                <p>Organist, choirmaster, and improviser</p>
+                <nav class="page-nav" aria-label="On this page">
+                    <a href="#about">About</a>
+                    <a href="#recordings">Recordings</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#events">Talks &amp; Festivals</a>
+                    <a href="#ensembles">Ensembles</a>
+                    <a href="#teachers">Teachers</a>
+                </nav>
             </div>
-            <div class="bio-content">
-                <div class="bio-image">
-                    <img src="images/gabriel-headshot.jpg" alt="Gabriel Johnston" class="musician-img">
-                </div>
-                <div class="bio-text">
-                    <p>I currently serve as interim organist and choir director at Calvary Episcopal Church in Indian Rocks Beach, Florida, a beachfront parish currently rebuilding from Hurricane Helene. I previously held this position from 2022 to 2025, during which I reinstated full Anglican chant, ran a concert series, organized an Evensong that raised $1,300, and led the documentation and music-related rebuilding efforts after the hurricane, raising $7,100 in grants.</p>
+        </section>
 
-                    <p>While pursuing my PhD in Geophysics at the University of Florida, I have maintained my passion for organ performance, studying with Dr. Laura Ellis. I also collaborated as a ballet pianist for the UF Dance Department from 2021 to 2024, improvising music for ballet and modern dance classes.</p>
-
-                    <p>My approach to organ improvisation blends traditional techniques with contemporary musical language, deeply influenced by the French organ tradition. During my summers in Paris for scientific work at IPGP, I continue my improvisation studies with some of the finest organists in France.</p>
-
-                    <h3>Improvisation Teachers</h3>
-                    <ul class="bio-list">
-                        <li>
-                            <span class="list-icon"><i class="fas fa-music"></i></span>
-                            <span class="list-text">Sophie-V&eacute;ronique Cauchefer-Choplin (Paris)</span>
-                        </li>
-                        <li>
-                            <span class="list-icon"><i class="fas fa-music"></i></span>
-                            <span class="list-text">Jeffrey Brillhart (Yale University)</span>
-                        </li>
-                        <li>
-                            <span class="list-icon"><i class="fas fa-music"></i></span>
-                            <span class="list-text">Fr&eacute;d&eacute;ric Blanc (Paris)</span>
-                        </li>
-                        <li>
-                            <span class="list-icon"><i class="fas fa-music"></i></span>
-                            <span class="list-text">Samuel Li&eacute;geon (Paris)</span>
-                        </li>
-                        <li>
-                            <span class="list-icon"><i class="fas fa-music"></i></span>
-                            <span class="list-text">David Cassan (Paris)</span>
-                        </li>
-                        <li>
-                            <span class="list-icon"><i class="fas fa-music"></i></span>
-                            <span class="list-text">Nicola Canzano (Paris)</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Raymond Glover Grant Feature -->
-    <section class="glover-grant">
-        <div class="container">
-            <div class="grant-content">
-                <div class="grant-icon"><i class="fas fa-award"></i></div>
-                <div class="grant-text">
-                    <h2>2025 Raymond Glover Grant Recipient</h2>
-                    <p class="grant-subtitle">Association of Anglican Musicians &middot; $3,500</p>
-                    <p>Awarded the Raymond Glover Grant for Episcopal Liturgical Music to study choral Evensong, Anglican chant, and liturgical improvisation with Dwight Thomas at the Cathedral Church of St. Peter in St. Petersburg, Florida, and with George Nicholls at the American Cathedral in Paris. The grant also funded travel to the 2025 Cincinnati AAM conference.</p>
-                    <p>This work culminated in a choral Evensong at Calvary Episcopal Church during its rebuilding from Hurricane Helene.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Musical Approach -->
-    <section class="musical-approach">
-        <div class="container">
-            <div class="section-header">
-                <h2>Musical Philosophy</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="approach-grid">
-                <div class="approach-card">
-                    <div class="approach-icon">
-                        <i class="fas fa-church"></i>
-                    </div>
-                    <h3>Liturgical Context</h3>
-                    <p>My work as an organist and choirmaster focuses on enhancing the liturgical experience through thoughtfully selected music that complements the sacred texts and seasons of The Book of Common Prayer.</p>
-                </div>
-                <div class="approach-card">
-                    <div class="approach-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Improvisation</h3>
-                    <p>Organ improvisation is at the core of my musical practice. I approach it as a dialogue between tradition and innovation, creating spontaneous musical structures that respond to architectural and acoustic spaces.</p>
-                </div>
-                <div class="approach-card">
-                    <div class="approach-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Collaboration</h3>
-                    <p>As a ballet pianist, I worked closely with dancers and choreographers, improvising and adapting classical and contemporary works to support movement and narrative in performance.</p>
-                </div>
-                <div class="approach-card">
-                    <div class="approach-icon">
-                        <i class="fas fa-globe-europe"></i>
-                    </div>
-                    <h3>French Influence</h3>
-                    <p>My studies in Paris have deeply influenced my musical style, particularly in improvisation, where I draw on the rich tradition of French organ music and its distinctive harmonies and textures.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Professional Experience -->
-    <section id="positions" class="positions">
-        <div class="container">
-            <div class="section-header">
-                <h2>Professional Experience</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="positions-timeline">
-                <div class="position-item">
-                    <div class="position-icon"><i class="fas fa-church"></i></div>
-                    <div class="position-content">
-                        <span class="position-date">April 2026 &ndash; Present</span>
-                        <h3>Interim Organist &amp; Choir Director</h3>
-                        <p class="position-institution">Calvary Episcopal Church, Indian Rocks Beach, FL</p>
-                    </div>
-                </div>
-                <div class="position-item">
-                    <div class="position-icon"><i class="fas fa-church"></i></div>
-                    <div class="position-content">
-                        <span class="position-date">October 2022 &ndash; June 2025</span>
-                        <h3>Organist &amp; Choirmaster</h3>
-                        <p class="position-institution">Calvary Episcopal Church, Indian Rocks Beach, FL</p>
-                        <ul class="position-details">
-                            <li>Planned choral anthems, service music, and conducted choir and bell choir rehearsals</li>
-                            <li>Reinstated full Anglican chant and organized an Evensong raising $1,300</li>
-                            <li>Led music-related Hurricane Helene rebuilding efforts, raising $7,100 in grants</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="position-item">
-                    <div class="position-icon"><i class="fas fa-music"></i></div>
-                    <div class="position-content">
-                        <span class="position-date">Spring 2021 &ndash; Spring 2024</span>
-                        <h3>Ballet Pianist</h3>
-                        <p class="position-institution">University of Florida Dance Department</p>
-                        <ul class="position-details">
-                            <li>Improvised music for ballet and modern dance classes</li>
-                            <li>Rearranged and adapted classical and contemporary pieces to fit class formats</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="position-item">
-                    <div class="position-icon"><i class="fas fa-church"></i></div>
-                    <div class="position-content">
-                        <span class="position-date">October 2019 &ndash; October 2022</span>
-                        <h3>Organist</h3>
-                        <p class="position-institution">Grace Presbyterian Church</p>
-                        <ul class="position-details">
-                            <li>Prepared preludes, postludes, choral anthems, and led four hymns weekly with choir</li>
-                            <li>Coordinated special music for holiday services</li>
-                        </ul>
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="split split-portrait">
+                    <img src="images/gabriel-headshot.jpg" alt="Gabriel Johnston standing at an organ console" class="portrait" width="533" height="800">
+                    <div>
+                        <h2 class="lead-title">About</h2>
+                        <p>I am Organist &amp; Choirmaster at Calvary Episcopal Church in Indian Rocks Beach, Florida, a post I held from October 2022 to June 2025 and returned to in April 2026. I direct the adult choir and bell choir, plan the music for the liturgical year, and play for weekly services, feast days, and special events.</p>
+                        <p>At Calvary I revived the concert series, reinstated full Anglican chant, and organized an Evensong that raised $1,300 toward the rebuilding of Calvary. I documented the music program&rsquo;s losses from Hurricane Helene and raised $7,100 in rebuilding grants, and I continue to oversee the program&rsquo;s rebuilding.</p>
+                        <p>Before Calvary I was organist at Grace Presbyterian Church in Gainesville and a ballet pianist for the University of Florida Dance Department, improvising for ballet and modern dance classes. I studied organ with Dr. Laura Ellis and hold a minor in organ performance from the University of Florida. I also sing bass and play viola.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Ensemble Experience -->
-    <section class="ensembles">
-        <div class="container">
-            <div class="section-header">
-                <h2>Ensemble Experience</h2>
-                <div class="divider"></div>
+        <!-- Recordings -->
+        <section id="recordings" class="section alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Recordings</h2>
+                    <div class="divider"></div>
+                    <p>Improvisations from the dedication of the new organ at Calvary Episcopal Church.</p>
+                </div>
+                <div class="grid-2">
+                    <div class="video-card">
+                        <a class="video" href="https://www.youtube.com/watch?v=EM6N63_UgV0" data-video-id="EM6N63_UgV0" data-video-title="Improvised Sinfonietta">
+                            <img src="images/video-sinfonietta.jpg" alt="Gabriel Johnston playing the organ at Calvary Episcopal Church" width="1280" height="720" loading="lazy">
+                            <span class="video-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+                            <span class="video-duration">14:35</span>
+                        </a>
+                        <h3>Improvised Sinfonietta</h3>
+                        <p>Improvised for the organ dedication at Calvary Episcopal Church, Indian Rocks Beach, Florida.</p>
+                    </div>
+                    <div class="video-card">
+                        <a class="video" href="https://www.youtube.com/watch?v=i4TSyDTWckY" data-video-id="i4TSyDTWckY" data-video-title="Improvisations for the Singing of the Organ">
+                            <img src="images/video-singing-of-the-organ.jpg" alt="Gabriel Johnston seated at the organ console at Calvary Episcopal Church" width="1280" height="720" loading="lazy">
+                            <span class="video-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+                            <span class="video-duration">10:27</span>
+                        </a>
+                        <h3>Improvisations for the Singing of the Organ</h3>
+                        <p>From the dedication concert of Calvary&rsquo;s new Rodgers instrument, following the church&rsquo;s recovery from flooding caused by Hurricane Helene. The Singing of the Organ is a liturgical rite in which the organ is ceremonially &ldquo;awakened&rdquo; through spoken invocations answered by improvised music.</p>
+                    </div>
+                </div>
+                <p class="center-link">
+                    <a href="https://www.youtube.com/@orionjohnston963" target="_blank" rel="noopener" class="text-link">More on YouTube <i class="fas fa-arrow-right"></i></a>
+                </p>
             </div>
-            <div class="ensemble-grid">
-                <div class="ensemble-item">
-                    <span class="ensemble-name">American Cathedral Choir</span>
-                    <span class="ensemble-date">Fall 2025</span>
-                </div>
-                <div class="ensemble-item">
-                    <span class="ensemble-name">Paris Chorale Society (Chorus)</span>
-                    <span class="ensemble-date">2024 &ndash; 2025</span>
-                </div>
-                <div class="ensemble-item">
-                    <span class="ensemble-name">St. Peter's Cathedral Evensong Choir, St. Petersburg, FL</span>
-                    <span class="ensemble-date">2024 &ndash; 2025</span>
-                </div>
-                <div class="ensemble-item">
-                    <span class="ensemble-name">Gainesville Masterchorale</span>
-                    <span class="ensemble-date">Spring 2020</span>
-                </div>
-                <div class="ensemble-item">
-                    <span class="ensemble-name">UF Symphony Orchestra (Viola)</span>
-                    <span class="ensemble-date">2017 &ndash; 2019</span>
-                </div>
-                <div class="ensemble-item">
-                    <span class="ensemble-name">UF Chamber Music (Viola)</span>
-                    <span class="ensemble-date">2017 &ndash; 2019</span>
-                </div>
-                <div class="ensemble-item">
-                    <span class="ensemble-name">Ocala Symphony Orchestra (Viola)</span>
-                    <span class="ensemble-date">Spring 2017</span>
-                </div>
-                <div class="ensemble-item">
-                    <span class="ensemble-name">Danville Symphony Orchestra (Viola)</span>
-                    <span class="ensemble-date">Fall 2015</span>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Primary Teachers -->
-    <section class="teachers">
-        <div class="container">
-            <div class="section-header">
-                <h2>Primary Teachers</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="teachers-grid">
-                <div class="teacher-category">
-                    <h3><i class="fas fa-music"></i> Organ</h3>
-                    <p>Dr. Laura Ellis</p>
-                </div>
-                <div class="teacher-category">
-                    <h3><i class="fas fa-microphone"></i> Voice</h3>
-                    <p>Prof. Lynn Sandefur-Gardner, Christopher Holloway</p>
-                </div>
-                <div class="teacher-category">
-                    <h3><i class="fas fa-piano-keyboard"></i> Piano</h3>
-                    <p>Dr. Mitch McKay, Dr. Jasmine Arakawa, Dr. Shirley Blankenship</p>
+        <!-- Glover Grant -->
+        <section class="band">
+            <div class="container">
+                <div class="band-feature">
+                    <div class="band-icon" aria-hidden="true"><i class="fas fa-award"></i></div>
+                    <div>
+                        <h2>2025 Raymond Glover Grant for Episcopal Liturgical Music</h2>
+                        <p class="band-kicker">Association of Anglican Musicians &middot; $3,500</p>
+                        <p>A professional development award supporting study of choral Evensong, Anglican chant, and liturgical improvisation at the Cathedral Church of St. Peter in St. Petersburg, Florida, and the American Cathedral in Paris.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Instruments -->
-    <section class="instruments">
-        <div class="container">
-            <div class="section-header">
-                <h2>Featured Instruments</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="instruments-tabs">
-                <div class="tabs-nav">
-                    <button class="tab-btn active" data-tab="calvary">Calvary Episcopal</button>
-                    <button class="tab-btn" data-tab="cathedral">St. Peter's Cathedral</button>
-                    <button class="tab-btn" data-tab="paris">American Cathedral Paris</button>
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Professional Experience</h2>
+                    <div class="divider"></div>
                 </div>
-                <div class="tabs-content">
-                    <div class="tab-content active" id="calvary">
-                        <div class="instrument-details-only">
-                            <h3>Calvary Episcopal Church Organ</h3>
-                            <p class="instrument-builder">Casavant Fr&egrave;res, Opus 1475 (renovated 2018)</p>
-                            <p class="instrument-description">A 3-manual, 42-rank instrument featuring a rich romantic character with neo-baroque additions. The organ possesses a warm foundation with colorful flutes and strings, and brilliant reeds suitable for both liturgical service and recital repertoire.</p>
-                            <div class="instrument-specs">
-                                <h4>Specification Highlights:</h4>
-                                <ul>
-                                    <li>Great: Principal 8', Bourdon 16', Fl&ucirc;te Harmonique 8', Trumpet 8'</li>
-                                    <li>Swell: Viole de Gambe 8', Voix C&eacute;leste 8', Trompette 8', Hautbois 8'</li>
-                                    <li>Choir: Quintaton 16', Fl&ucirc;te &agrave; Chemin&eacute;e 8', Clarinet 8'</li>
-                                    <li>Pedal: Contrebasse 16', Bourdon 16', Trompette 8'</li>
-                                </ul>
-                            </div>
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <span class="timeline-dot" aria-hidden="true"><i class="fas fa-church"></i></span>
+                        <div class="card">
+                            <span class="pill">October 2022 &ndash; June 2025 &middot; April 2026 &ndash; Present</span>
+                            <h3>Organist &amp; Choirmaster</h3>
+                            <p class="org">Calvary Episcopal Church, Indian Rocks Beach, FL</p>
+                            <ul class="bullets">
+                                <li>Direct the parish music program, including adult choir and bell choir</li>
+                                <li>Plan choral anthems, service music, hymns, and music for major liturgical services</li>
+                                <li>Serve as principal organist for weekly services, feast days, and special events</li>
+                                <li>Revived the concert series, reinstated full Anglican chant, and organized an Evensong raising $1,300 for the rebuilding of Calvary</li>
+                                <li>Documented the music losses from Hurricane Helene and coordinated music-related aspects of the rebuilding; raised $7,100 in rebuilding grants</li>
+                                <li>Oversee the continued rebuilding and development of the parish music program</li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="tab-content" id="cathedral">
-                        <div class="instrument-details-only">
-                            <h3>Cathedral of St. Peter Organ</h3>
-                            <p class="instrument-builder">Schantz Organ Company (1991, renovated 2015)</p>
-                            <p class="instrument-description">A substantial 4-manual instrument with 81 ranks, designed in the American Classic tradition but with significant French romantic and symphonic colors. Features an antiphonal division and horizontal trumpet en chamade.</p>
-                            <div class="instrument-specs">
-                                <h4>Specification Highlights:</h4>
-                                <ul>
-                                    <li>Great: Principal 16', Diapason 8', Harmonic Flute 8', Mixture V, Trompette 8'</li>
-                                    <li>Swell: Bourdon 16', Gamba 8', Voix C&eacute;leste 8', Hautbois 8', Vox Humana 8'</li>
-                                    <li>Choir: Gedackt 8', Dulciana 8', Cromorne 8', Tuba 8'</li>
-                                    <li>Solo: Stentorphone 8', Harmonic Flute 4', Tuba Mirabilis 8', French Horn 8'</li>
-                                    <li>Pedal: Contra Bourdon 32', Open Wood 16', Ophicleide 16'</li>
-                                </ul>
-                            </div>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-dot" aria-hidden="true"><i class="fas fa-music"></i></span>
+                        <div class="card">
+                            <span class="pill">Spring 2021 &ndash; Spring 2024</span>
+                            <h3>Ballet Pianist</h3>
+                            <p class="org">University of Florida Dance Department</p>
+                            <ul class="bullets">
+                                <li>Improvised music for ballet and modern dance classes</li>
+                                <li>Rearranged and adapted classical and contemporary pieces to fit class formats</li>
+                                <li>Collaborated with dance faculty to refine musical selections for performance needs</li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="tab-content" id="paris">
-                        <div class="instrument-details-only">
-                            <h3>American Cathedral in Paris Organ</h3>
-                            <p class="instrument-builder">Cavaill&eacute;-Coll (1887, restored by Daniel Birouste 1993)</p>
-                            <p class="instrument-description">A historic 3-manual, 59-rank symphonic instrument built by the legendary Aristide Cavaill&eacute;-Coll. This organ exemplifies the French Romantic tradition with its powerful foundations, colorful reeds, and expressive capabilities.</p>
-                            <div class="instrument-specs">
-                                <h4>Specification Highlights:</h4>
-                                <ul>
-                                    <li>Grand-Orgue: Montre 16', Bourdon 16', Montre 8', Fl&ucirc;te Harmonique 8'</li>
-                                    <li>Positif: Principal 8', Bourdon 8', Gambe 8', Trompette 8'</li>
-                                    <li>R&eacute;cit Expressif: Viole de Gambe 8', Voix C&eacute;leste 8', Hautbois 8', Voix Humaine 8'</li>
-                                    <li>P&eacute;dale: Fl&ucirc;te 16', Soubasse 16', Bombarde 16'</li>
-                                </ul>
-                            </div>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-dot" aria-hidden="true"><i class="fas fa-church"></i></span>
+                        <div class="card">
+                            <span class="pill">October 2019 &ndash; October 2022</span>
+                            <h3>Organist</h3>
+                            <p class="org">Grace Presbyterian Church, Gainesville, FL</p>
+                            <ul class="bullets">
+                                <li>Prepared preludes, postludes, and choral anthems, and led four hymns weekly with choir</li>
+                                <li>Coordinated special music for holiday services; recommended and hired guest singers</li>
+                            </ul>
                         </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Talks & Festivals -->
+        <section id="events" class="section alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Talks &amp; Festivals</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid-3">
+                    <div class="card">
+                        <span class="pill">July 2026</span>
+                        <h3>Haarlem International Organ Festival</h3>
+                        <p>Participant, Advanced Improvisation Course with Franz Danksagm&uuml;ller.</p>
+                    </div>
+                    <div class="card">
+                        <span class="pill">January 24, 2025</span>
+                        <h3><span lang="fr">Il faut chercher</span> &ndash; A Personal Journey in Improvisation</h3>
+                        <p>Invited talk, University of Florida Pipe Organ Centennial.</p>
+                    </div>
+                    <div class="card">
+                        <span class="pill">2021</span>
+                        <h3>Emerald Coast Chamber Music Festival</h3>
+                        <p>Faur&eacute; Piano Quartet No. 1, Rochberg Viola Sonata, and Rachmaninoff <em>Spring Waters</em> and <em>Harvest of Sorrows</em>.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Affiliations -->
-    <section class="affiliations">
-        <div class="container">
-            <div class="section-header">
-                <h2>Professional Affiliations</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="affiliations-grid">
-                <div class="affiliation-item">
-                    <i class="fas fa-music"></i>
-                    <span>American Guild of Organists (AGO)</span>
+        <!-- Ensembles -->
+        <section id="ensembles" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ensemble Experience</h2>
+                    <div class="divider"></div>
                 </div>
-                <div class="affiliation-item">
-                    <i class="fas fa-cross"></i>
-                    <span>Association of Anglican Musicians (AAM)</span>
-                </div>
+                <ul class="rows">
+                    <li>
+                        <div class="row-main"><strong>Master Chorale of Tampa Bay</strong><span>Bass</span></div>
+                        <div class="row-side">Fall 2024 &ndash; Spring 2025 &middot; Fall 2026 &ndash; Present</div>
+                    </li>
+                    <li>
+                        <div class="row-main"><strong>American Cathedral Choir</strong><span>Bass</span></div>
+                        <div class="row-side">Fall 2025</div>
+                    </li>
+                    <li>
+                        <div class="row-main"><strong>Paris Choral Society</strong><span>Bass</span></div>
+                        <div class="row-side">Fall 2025</div>
+                    </li>
+                    <li>
+                        <div class="row-main"><strong>St. Peter&rsquo;s Cathedral Evensong Choir, St. Petersburg, FL</strong><span>Bass</span></div>
+                        <div class="row-side">Fall 2024 &ndash; Spring 2025</div>
+                    </li>
+                    <li>
+                        <div class="row-main"><strong>Gainesville Masterchorale</strong><span>Bass</span></div>
+                        <div class="row-side">Spring 2020</div>
+                    </li>
+                    <li>
+                        <div class="row-main"><strong>UF Symphony Orchestra</strong><span>Viola</span></div>
+                        <div class="row-side">Fall 2017 &ndash; Spring 2019</div>
+                    </li>
+                    <li>
+                        <div class="row-main"><strong>UF Chamber Music</strong><span>Viola</span></div>
+                        <div class="row-side">Fall 2017 &ndash; Spring 2019</div>
+                    </li>
+                    <li>
+                        <div class="row-main"><strong>Ocala Symphony Orchestra</strong><span>Viola</span></div>
+                        <div class="row-side">Spring 2017</div>
+                    </li>
+                    <li>
+                        <div class="row-main"><strong>Danville Symphony Orchestra</strong><span>Viola</span></div>
+                        <div class="row-side">Fall 2015</div>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Download Resume -->
-    <section class="download-cv">
-        <div class="container">
-            <div class="cv-container">
-                <div class="cv-text">
-                    <h2>Download My Music Resume</h2>
-                    <p>For a complete overview of my musical background, positions, and ensemble experience.</p>
+        <!-- Teachers -->
+        <section id="teachers" class="section alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Teachers &amp; Affiliations</h2>
+                    <div class="divider"></div>
                 </div>
-                <a href="docs/Music_Resume_Gabriel_Johnston.pdf" target="_blank" class="btn btn-primary cv-download">
-                    <i class="fas fa-file-download"></i> Download Resume
-                </a>
+                <dl class="skill-table">
+                    <div>
+                        <dt>Organ</dt>
+                        <dd>Dr. Laura Ellis</dd>
+                    </div>
+                    <div>
+                        <dt>Improvisation</dt>
+                        <dd>Sophie-V&eacute;ronique Cauchefer-Choplin, Jeffrey Brillhart, Fr&eacute;d&eacute;ric Blanc, Samuel Li&eacute;geon, David Cassan, Nicola Canzano</dd>
+                    </div>
+                    <div>
+                        <dt>Voice</dt>
+                        <dd>Prof. Lynn Sandefur-Gardner, Christopher Holloway</dd>
+                    </div>
+                    <div>
+                        <dt>Piano</dt>
+                        <dd>Dr. Mitch McKay, Dr. Jasmine Arakawa, Dr. Shirley Blankenship</dd>
+                    </div>
+                    <div>
+                        <dt>Affiliations</dt>
+                        <dd>American Guild of Organists (AGO), Association of Anglican Musicians (AAM)</dd>
+                    </div>
+                </dl>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <!-- Music CV -->
+        <section class="band">
+            <div class="container band-cta">
+                <div>
+                    <h2>Music CV</h2>
+                    <p>Positions, teachers, and ensemble experience as a PDF.</p>
+                </div>
+                <a href="docs/Gabriel_Johnston_Music_CV.pdf" target="_blank" rel="noopener" class="btn btn-light"><i class="fas fa-file-arrow-down" aria-hidden="true"></i> Download CV</a>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Gabriel Johnston</h3>
-                    <p>PhD Candidate in Geophysics &amp; Organist</p>
+            <div class="footer-top">
+                <div>
+                    <h2>Gabriel Johnston</h2>
+                    <p>Geophysicist &amp; Organist</p>
                 </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="academic.html">Academic</a></li>
-                        <li><a href="music.html">Music</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academic.html">Academic</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Gabriel Johnston. All rights reserved.</p>
-                <a href="#main-nav" class="back-to-top">
-                    <i class="fas fa-arrow-up"></i>
-                </a>
+                <p>&copy; 2026 Gabriel Johnston</p>
+                <a href="#main">Back to top <i class="fas fa-arrow-up" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

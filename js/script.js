@@ -1,250 +1,94 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Vanta.js Globe Background (homepage only)
-    if (document.getElementById('vanta-bg') && typeof VANTA !== 'undefined') {
-        VANTA.GLOBE({
-            el: "#vanta-bg",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x1e5f8e,
-            color2: 0x6a3775,
-            size: 0.90,
-            backgroundColor: 0xf8f9fa
+(function () {
+    'use strict';
+
+    // Mobile navigation
+    var toggle = document.getElementById('nav-toggle');
+    var menu = document.getElementById('nav-menu');
+
+    if (toggle && menu) {
+        var setOpen = function (open) {
+            menu.classList.toggle('open', open);
+            toggle.setAttribute('aria-expanded', String(open));
+        };
+
+        toggle.addEventListener('click', function () {
+            setOpen(!menu.classList.contains('open'));
+        });
+
+        menu.addEventListener('click', function (event) {
+            if (event.target.closest('a')) setOpen(false);
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') setOpen(false);
         });
     }
 
-    // Mobile Navigation Toggle
-    const navToggle = document.getElementById('nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    if (navToggle) {
-        navToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    }
-    
-    // Sticky Header
-    const header = document.getElementById('main-nav');
-    if (header) {
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    }
-    
-    // Highlights Slider
-    initSlider('highlights-slider', 'slider-prev', 'slider-next', 'slider-dots');
-    
-    // Performances Slider
-    initSlider('performances-slider', 'performances-prev', 'performances-next', 'performances-dots');
-    
-    // Publication Abstract Toggle
-    const abstractToggles = document.querySelectorAll('.publication-abstract-toggle');
-    abstractToggles.forEach(toggle => {
-        toggle.addEventListener('click', function() {
-            const abstract = this.nextElementSibling;
-            abstract.classList.toggle('active');
-            
-            // Change icon based on state
-            const icon = this.querySelector('i');
-            if (abstract.classList.contains('active')) {
-                icon.classList.remove('fa-chevron-down');
-                icon.classList.add('fa-chevron-up');
-            } else {
-                icon.classList.remove('fa-chevron-up');
-                icon.classList.add('fa-chevron-down');
-            }
+    // Videos: each .video is a plain link to YouTube. With JavaScript, a click
+    // swaps the thumbnail for the player in place, so YouTube is only contacted
+    // when a visitor chooses to play something.
+    document.querySelectorAll('a.video[data-video-id]').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            if (event.metaKey || event.ctrlKey || event.shiftKey) return;
+            event.preventDefault();
+
+            var frame = document.createElement('iframe');
+            frame.src = 'https://www.youtube-nocookie.com/embed/' +
+                encodeURIComponent(link.dataset.videoId) + '?autoplay=1&rel=0';
+            frame.title = link.dataset.videoTitle || 'Video';
+            frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+            frame.referrerPolicy = 'strict-origin-when-cross-origin';
+            frame.allowFullscreen = true;
+
+            var holder = document.createElement('div');
+            holder.className = 'video';
+            holder.appendChild(frame);
+            link.replaceWith(holder);
         });
     });
-    
-    // Instrument Tabs
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.tab-content');
-    
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const tabId = button.dataset.tab;
-            
-            // Remove active class from all buttons and contents
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            tabContents.forEach(content => content.classList.remove('active'));
-            
-            // Add active class to clicked button and corresponding content
-            button.classList.add('active');
-            document.getElementById(tabId).classList.add('active');
-        });
-    });
-    
-    // Smooth Scroll for Anchor Links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            if (this.getAttribute('href') !== '#') {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    // Close mobile menu if open
-                    if (navMenu.classList.contains('active')) {
-                        navMenu.classList.remove('active');
-                        navToggle.classList.remove('active');
-                    }
-                    
-                    // Scroll to target with offset for fixed header
-                    const headerHeight = document.getElementById('main-nav').offsetHeight;
-                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            }
-        });
-    });
-    
-    // Animation on Scroll (Intersection Observer)
-    const animateElements = document.querySelectorAll('.animated-element');
-    
-    if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target); // Stop observing once visible
-                }
+
+    // Home hero globe (Vanta.js). Loaded only on wide screens and only when the
+    // visitor has not asked for reduced motion; the hero has a plain gradient
+    // behind it, so nothing breaks if the scripts fail to load.
+    var hero = document.getElementById('vanta-bg');
+    var wide = window.matchMedia('(min-width: 901px)').matches;
+    var calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (hero && wide && !calm) {
+        var load = function (src) {
+            return new Promise(function (resolve, reject) {
+                var script = document.createElement('script');
+                script.src = src;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.head.appendChild(script);
             });
-        }, { threshold: 0.2 }); // Trigger when 20% of the element is visible
-        
-        animateElements.forEach(el => {
-            observer.observe(el);
-        });
-    } else {
-        // Fallback for browsers that don't support IntersectionObserver
-        animateElements.forEach(el => {
-            el.classList.add('is-visible'); // Just show elements if no IntersectionObserver
-        });
-    }
+        };
 
-    // Custom cursor and magnetic buttons removed for cleaner UX
-    
-    // Contact form handler (for future Formspree upgrade)
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formElements = contactForm.querySelectorAll('input, textarea, button');
-            formElements.forEach(el => el.disabled = true);
-            const successMessage = document.createElement('div');
-            successMessage.className = 'success-message';
-            successMessage.innerHTML = '<i class="fas fa-check-circle"></i> Thank you for your message! I will get back to you soon.';
-            contactForm.appendChild(successMessage);
-            setTimeout(() => {
-                formElements.forEach(el => { el.disabled = false; el.value = ''; });
-                successMessage.remove();
-            }, 5000);
-        });
-    }
+        var start = function () {
+            load('https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js')
+                .then(function () {
+                    return load('https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.globe.min.js');
+                })
+                .then(function () {
+                    window.VANTA.GLOBE({
+                        el: hero,
+                        mouseControls: true,
+                        touchControls: false,
+                        gyroControls: false,
+                        minHeight: 200,
+                        minWidth: 200,
+                        scale: 1,
+                        color: 0x1e5f8e,
+                        color2: 0x6a3775,
+                        size: 0.9,
+                        backgroundColor: 0xf8f9fa
+                    });
+                })
+                .catch(function () { /* keep the static gradient */ });
+        };
 
-    // Hide preloader once page is fully loaded
-    window.addEventListener('load', () => {
-        const preloader = document.querySelector('.preloader');
-        if (preloader) {
-            preloader.classList.add('hidden');
-        }
-    });
-});
-
-// Helper Functions
-
-// Initialize Slider
-function initSlider(sliderId, prevBtnId, nextBtnId, dotsId) {
-    const slider = document.getElementById(sliderId);
-    
-    if (!slider) return;
-    
-    const slides = slider.querySelectorAll('.highlight-slide, .performance-slide');
-    const prevBtn = document.getElementById(prevBtnId);
-    const nextBtn = document.getElementById(nextBtnId);
-    const dotsContainer = document.getElementById(dotsId);
-    
-    if (slides.length === 0) return;
-    
-    let currentIndex = 0;
-    
-    // Create dots
-    slides.forEach((_, index) => {
-        const dot = document.createElement('span');
-        dot.classList.add('slider-dot');
-        if (index === 0) dot.classList.add('active');
-        dot.dataset.index = index;
-        
-        dot.addEventListener('click', () => {
-            showSlide(index);
-        });
-        
-        dotsContainer.appendChild(dot);
-    });
-    
-    // Initialize first slide
-    showSlide(0);
-    
-    // Next Button
-    if (nextBtn) {
-        nextBtn.addEventListener('click', () => {
-            showSlide(currentIndex + 1);
-        });
+        if (document.readyState === 'complete') start();
+        else window.addEventListener('load', start);
     }
-    
-    // Previous Button
-    if (prevBtn) {
-        prevBtn.addEventListener('click', () => {
-            showSlide(currentIndex - 1);
-        });
-    }
-    
-    // Show specific slide
-    function showSlide(index) {
-        // Handle index bounds
-        if (index < 0) {
-            index = slides.length - 1;
-        } else if (index >= slides.length) {
-            index = 0;
-        }
-        
-        // Update current index
-        currentIndex = index;
-        
-        // Hide all slides
-        slides.forEach(slide => {
-            slide.classList.remove('active');
-        });
-        
-        // Show current slide
-        slides[currentIndex].classList.add('active');
-        
-        // Update dots
-        const dots = dotsContainer.querySelectorAll('.slider-dot');
-        dots.forEach((dot, idx) => {
-            if (idx === currentIndex) {
-                dot.classList.add('active');
-            } else {
-                dot.classList.remove('active');
-            }
-        });
-    }
-    
-    // Auto advance slides every 5 seconds
-    setInterval(() => {
-        showSlide(currentIndex + 1);
-    }, 5000);
-}
+})();

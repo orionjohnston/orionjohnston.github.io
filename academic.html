@@ -2,574 +2,453 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Academic | Gabriel Johnston</title>
-    <meta name="description" content="The academic research and publications of Gabriel Johnston, PhD Candidate in Geophysics at the University of Florida">
-        <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/academic.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Research, publications, and teaching of Gabriel Johnston, PhD: mantle geodynamics, isotope geochemistry, and particle tracking in time-reversed convection models.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Academic | Gabriel Johnston">
+    <meta property="og:description" content="Mantle geodynamics, isotope geochemistry, and particle tracking in time-reversed convection models.">
+    <meta property="og:image" content="https://orionjohnston.github.io/Website2/images/llsvp.png">
+    <meta name="theme-color" content="#1e5f8e">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&amp;family=Open+Sans:ital,wght@0,400;0,600;1,400&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/site.css">
 </head>
 <body class="academic-page">
-    <!-- Navigation -->
-    <nav id="main-nav">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav id="main-nav" aria-label="Main">
         <div class="container">
-            <div class="logo">
-                <a href="index.html">Gabriel Johnston</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu">
+            <div class="logo"><a href="index.html">Gabriel Johnston</a></div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="academic.html" class="active">Academic</a></li>
+                <li><a href="academic.html" aria-current="page">Academic</a></li>
                 <li><a href="music.html">Music</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="page-hero academic-hero">
-        <div class="container">
-            <h1>Academic Research</h1>
-            <p>Exploring Earth's interior through computational geophysics</p>
-        </div>
-    </section>
-
-    <!-- Research Overview with LLSVP Visualization -->
-    <section class="research-overview">
-        <div class="container">
-            <div class="section-header">
-                <h2>Research Focus</h2>
-                <div class="divider"></div>
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Academic</h1>
+                <p>Mantle geodynamics, isotope geochemistry, and particle tracking</p>
+                <nav class="page-nav" aria-label="On this page">
+                    <a href="#research">Research</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#presentations">Presentations</a>
+                    <a href="#positions">Positions &amp; Education</a>
+                    <a href="#teaching">Teaching</a>
+                    <a href="#awards">Awards</a>
+                    <a href="#skills">Skills</a>
+                </nav>
             </div>
-            <div class="research-content">
-                <div class="research-image">
-                    <img src="images/llsvp.png" alt="3D visualization of Large Low Shear Velocity Provinces (LLSVPs) at the core-mantle boundary with particle trajectories" class="research-img llsvp-showcase">
-                    <p class="image-caption">3D visualization of LLSVPs at the core-mantle boundary with backward-tracked particle trajectories from Indo-Atlantic hotspots</p>
+        </section>
+
+        <!-- Research -->
+        <section id="research" class="section alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Research</h2>
+                    <div class="divider"></div>
                 </div>
-                <div class="research-text">
-                    <p>My research combines mantle geodynamics with isotope geochemistry to investigate the origin, transport, and longevity of chemical heterogeneity in Earth's interior. I use particle tracking in time-reversed convection models constrained by seismic tomography to link deep mantle processes with surface geochemical observations.</p>
-
-                    <p>Key research areas include:</p>
-                    <ul class="research-list">
-                        <li>
-                            <span class="list-icon"><i class="fas fa-microscope"></i></span>
-                            <span class="list-text">Reconciling hotspot geochemistry with mantle dynamics through Lagrangian particle tracking</span>
-                        </li>
-                        <li>
-                            <span class="list-icon"><i class="fas fa-wave-square"></i></span>
-                            <span class="list-text">Origin of the DUPAL geochemical anomaly in the South Atlantic and Southwest Indian Oceans</span>
-                        </li>
-                        <li>
-                            <span class="list-icon"><i class="fas fa-chart-line"></i></span>
-                            <span class="list-text">Statistical analysis of hotspot-LLSVP spatial correlations</span>
-                        </li>
-                        <li>
-                            <span class="list-icon"><i class="fas fa-cubes"></i></span>
-                            <span class="list-text">Voxel-based mantle sampling, residence time distributions, and mixing efficiency</span>
-                        </li>
-                    </ul>
-
-                    <div class="collaboration">
-                        <h3>International Collaboration</h3>
-                        <p>I work closely with the Institut de Physique du Globe de Paris (IPGP), where I spent June&ndash;December 2025 as an invited scientist, combining computational approaches with geochemical observations to create comprehensive models of Earth's internal dynamics.</p>
+                <div class="split">
+                    <figure class="figure-dark">
+                        <img src="images/llsvp.png" alt="Cutaway globe showing a large low-shear-velocity province in red above the core, with curved particle paths leading up to hotspots at the surface" width="810" height="810">
+                        <figcaption>Large low-shear-velocity provinces (LLSVPs) above the core&ndash;mantle boundary, with backward-tracked particle trajectories from Indo-Atlantic hotspots.</figcaption>
+                    </figure>
+                    <div>
+                        <p>My research combines mantle geodynamics with isotope geochemistry to investigate the origin, transport, and longevity of chemical heterogeneity in Earth&rsquo;s interior. I use particle tracking in time-reversed convection models constrained by seismic tomography to link deep mantle processes with surface geochemical observations.</p>
+                        <p>I also use Monte Carlo methods to test whether proposed links between hotspots and lower-mantle structures are statistically robust or artifacts of methodological choices.</p>
+                        <ul class="icon-list">
+                            <li>Reconciling hotspot geochemistry with mantle dynamics through Lagrangian particle tracking</li>
+                            <li>The origin of the DUPAL geochemical anomaly in the South Atlantic and Southwest Indian Oceans</li>
+                            <li>Statistical tests of hotspot&ndash;LLSVP spatial correlations</li>
+                            <li>Voxel-based mantle sampling: residence time and flux</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Education -->
-    <section id="education" class="education">
-        <div class="container">
-            <div class="section-header">
-                <h2>Education</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="education-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2020 &ndash; Present</span>
-                        <h3>PhD Candidate, Geologic Sciences</h3>
-                        <p class="timeline-institution">University of Florida, Gainesville, FL</p>
-                        <p>Thesis: <em>Reconciling Hotspot Geochemistry with Mantle Dynamics through Particle Tracking</em></p>
-                        <p>Advisor: Professor Alessandro Forte</p>
-                        <p>Coursework and research in conjunction with the Institut de Physique du Globe de Paris (IPGP)</p>
-                    </div>
+        <!-- Publications -->
+        <section id="publications" class="section">
+            <div class="container narrow">
+                <div class="section-header">
+                    <h2>Publications</h2>
+                    <div class="divider"></div>
+                    <p><a href="https://scholar.google.com/citations?user=RMsvwOsAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="text-link"><i class="fab fa-google-scholar" aria-hidden="true"></i> Google Scholar profile</a></p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">May 2019</span>
-                        <h3>Bachelor of Arts, Astronomy and French Literature</h3>
-                        <p class="timeline-institution">University of Florida, Gainesville, FL</p>
-                        <p>Minors: Physics, Geology, Music Performance</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-plane"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Spring 2016 &ndash; Fall 2016</span>
-                        <h3>Year Abroad</h3>
-                        <p class="timeline-institution">Universit&eacute; Paris Diderot &amp; Institut Catholique de Paris, Paris, France</p>
-                        <p>Studied Literature, Astronomy, and conducted research in Second Language Acquisition</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Research Experience -->
-    <section class="research-experience">
-        <div class="container">
-            <div class="section-header">
-                <h2>Research Experience</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <div class="experience-icon"><i class="fas fa-globe-americas"></i></div>
-                    <div class="experience-content">
-                        <h3>Graduate Research in Computational Geophysics</h3>
-                        <span class="experience-date">Fall 2020 &ndash; Present</span>
-                        <p class="experience-institution">University of Florida</p>
-                        <p>Developed advanced particle-tracking methods in 4D global mantle convection models integrating seismic tomographic and geochemical data. Research aims to clarify the origin and evolution of hotspot-related chemical anomalies by reconstructing mantle flow through geologic time.</p>
-                    </div>
-                </div>
-                <div class="experience-card">
-                    <div class="experience-icon"><i class="fas fa-flask"></i></div>
-                    <div class="experience-content">
-                        <h3>Invited Scientist</h3>
-                        <span class="experience-date">June &ndash; December 2025</span>
-                        <p class="experience-institution">Institut de Physique du Globe de Paris (IPGP), France</p>
-                        <p>Worked with an international team on reconciling geochemical observations with mantle convection models.</p>
-                    </div>
-                </div>
-                <div class="experience-card">
-                    <div class="experience-icon"><i class="fas fa-star"></i></div>
-                    <div class="experience-content">
-                        <h3>Undergraduate Research in Star Formation</h3>
-                        <span class="experience-date">Fall 2018 &ndash; Fall 2019</span>
-                        <p class="experience-institution">University of Florida</p>
-                        <p>Developed Python code for near-infrared photometry and photometric analysis as part of the Galactic Census of High and Medium-mass Protostars (CHaMP) under Dr. Peter Barnes.</p>
-                    </div>
-                </div>
-                <div class="experience-card">
-                    <div class="experience-icon"><i class="fas fa-language"></i></div>
-                    <div class="experience-content">
-                        <h3>Undergraduate Research in Second Language Acquisition</h3>
-                        <span class="experience-date">Spring 2016</span>
-                        <p class="experience-institution">Coll&egrave;ge Robert Doisneau, Paris, France</p>
-                        <p>Taught English to French middle school students and assisted in research on language pedagogy.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications -->
-    <section id="publications" class="publications">
-        <div class="container">
-            <div class="section-header">
-                <h2>Publications</h2>
-                <div class="divider"></div>
-            </div>
-
-            <!-- In Review -->
-            <h3 class="publications-subheading">In Review</h3>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="publication-year">2025</div>
-                    <div class="publication-content">
+                <h3 class="subheading">In review</h3>
+                <article class="entry">
+                    <div class="entry-label small">Preprint</div>
+                    <div>
                         <h3>Southern Hemisphere Hotspots Traced Back to Distinct Paleo-Subduction Zones</h3>
-                        <p class="publication-authors"><strong>Johnston, G.</strong>, Forte, A., Gli&scaron;ovi&cacute;, P., Chauvel, C., Farnetani, C., &amp; Robert, B.</p>
-                        <p class="publication-venue"><em>Under review</em></p>
-                        <p class="publication-doi">DOI: <a href="https://doi.org/10.21203/rs.3.rs-7827767/v1" target="_blank">10.21203/rs.3.rs-7827767/v1</a></p>
-                        <button class="publication-abstract-toggle">Abstract <i class="fas fa-chevron-down"></i></button>
-                        <div class="publication-abstract">
-                            <p>This study uses Lagrangian particle tracking in time-reversed mantle convection models to trace South Atlantic DUPAL hotspots and Southwest Indian Ocean non-DUPAL hotspots back to two distinct paleo-subduction zones rather than the African LLSVP core. DUPAL signatures trace to southern Panthalassa margin subduction (250&ndash;180 Ma), while non-DUPAL hotspots trace to northern Paleo-Tethys subduction.</p>
-                        </div>
+                        <p class="entry-authors"><strong>G. Johnston</strong>, A. Forte, P. Gli&scaron;ovi&cacute;, C. Chauvel, C. Farnetani, &amp; B. Robert</p>
+                        <p class="entry-venue">Under review</p>
+                        <p><a href="https://doi.org/10.21203/rs.3.rs-7827767/v1" target="_blank" rel="noopener">doi.org/10.21203/rs.3.rs-7827767/v1</a></p>
+                        <details class="summary">
+                            <summary>Summary</summary>
+                            <p>Lagrangian particle tracking in time-reversed mantle convection models traces South Atlantic DUPAL hotspots and Southwest Indian Ocean non-DUPAL hotspots back to two distinct paleo-subduction zones rather than to the core of the African LLSVP. The DUPAL group traces to subduction along the southern Panthalassa margin (250&ndash;180 Ma), the non-DUPAL group to northern Paleo-Tethys subduction.</p>
+                        </details>
                     </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-year">2025</div>
-                    <div class="publication-content">
+                </article>
+                <article class="entry">
+                    <div class="entry-label small">Preprint</div>
+                    <div>
                         <h3>Deeply Recycled Origins of Mantle Heterogeneity at the Northern East Pacific Rise</h3>
-                        <p class="publication-authors">Anderson, M., <strong>Johnston, G.</strong>, Perfit, M., Forte, A., Kamenov, G., Graham, D. W., Dixon, J., Wanless, V. D., &amp; Gli&scaron;ovi&cacute;, P.</p>
-                        <p class="publication-venue"><em>Under review</em></p>
-                        <p class="publication-doi">DOI: <a href="https://doi.org/10.21203/rs.3.rs-6173319/v1" target="_blank">10.21203/rs.3.rs-6173319/v1</a></p>
+                        <p class="entry-authors">M. Anderson, <strong>G. Johnston</strong>, M. Perfit, A. Forte, G. Kamenov, D. W. Graham, J. Dixon, V. D. Wanless, &amp; P. Gli&scaron;ovi&cacute;</p>
+                        <p class="entry-venue">Under review</p>
+                        <p><a href="https://doi.org/10.21203/rs.3.rs-6173319/v1" target="_blank" rel="noopener">doi.org/10.21203/rs.3.rs-6173319/v1</a></p>
                     </div>
-                </div>
-            </div>
+                </article>
 
-            <!-- In Preparation -->
-            <h3 class="publications-subheading">In Preparation</h3>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="publication-year">&mdash;</div>
-                    <div class="publication-content">
+                <h3 class="subheading">In preparation</h3>
+                <article class="entry">
+                    <div class="entry-label small">In prep.</div>
+                    <div>
                         <h3>Playing with Edges: The Influence of Arbitrary Definitions on Hotspot&ndash;LLSVP Correlations</h3>
-                        <p class="publication-authors"><strong>Johnston, G.</strong>, Liu, S., Forte, A., &amp; Gli&scaron;ovi&cacute;, P.</p>
-                        <p class="publication-venue"><em>In preparation</em></p>
+                        <p class="entry-authors"><strong>G. Johnston</strong>, S. Liu, A. Forte, &amp; P. Gli&scaron;ovi&cacute;</p>
                     </div>
-                </div>
-                <div class="publication-item">
-                    <div class="publication-year">&mdash;</div>
-                    <div class="publication-content">
+                </article>
+                <article class="entry">
+                    <div class="entry-label small">In prep.</div>
+                    <div>
                         <h3>How Well Is the Mantle Sampled? A Global Voxel-Based Analysis of Residence Time and Flux from Forward- and Reverse-Time Mantle Convection</h3>
-                        <p class="publication-authors"><strong>Johnston, G.</strong>, Anderson, M., Forte, A., &amp; Gli&scaron;ovi&cacute;, P.</p>
-                        <p class="publication-venue"><em>In preparation</em></p>
+                        <p class="entry-authors"><strong>G. Johnston</strong>, M. Anderson, A. Forte, &amp; P. Gli&scaron;ovi&cacute;</p>
                     </div>
-                </div>
+                </article>
             </div>
+        </section>
 
-            <!-- Conference Presentations -->
-            <h3 class="publications-subheading">Conference Presentations</h3>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="publication-year">2026</div>
-                    <div class="publication-content">
+        <!-- Presentations -->
+        <section id="presentations" class="section alt">
+            <div class="container narrow">
+                <div class="section-header">
+                    <h2>Conference Presentations</h2>
+                    <div class="divider"></div>
+                </div>
+                <article class="entry">
+                    <div class="entry-label">2026</div>
+                    <div>
+                        <h3>A Global Voxel-Based Analysis of Residence Time and Flux from Backward in Time Mantle Convection</h3>
+                        <p class="entry-authors"><strong>G. Johnston</strong>, A. Forte, M. Anderson, &amp; P. Gli&scaron;ovi&cacute;</p>
+                        <p class="entry-venue">Ada Lovelace Workshop on Modelling Mantle and Lithosphere Dynamics, Prague, Czech Republic (June 2026)</p>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="entry-label">2026</div>
+                    <div>
                         <h3>How Well Is the Mantle Sampled? A Global Voxel-Based Analysis of Residence Time and Flux from Forward- and Reverse-Time Mantle Convection</h3>
-                        <p class="publication-authors"><strong>Johnston, G.</strong>, Anderson, M., Forte, A., &amp; Gli&scaron;ovi&cacute;, P.</p>
-                        <p class="publication-venue">EGU General Assembly 2026, Vienna, Austria</p>
-                        <p class="publication-doi">DOI: <a href="https://doi.org/10.5281/zenodo.14740086" target="_blank">10.5281/zenodo.14740086</a></p>
+                        <p class="entry-authors"><strong>G. Johnston</strong>, M. Anderson, A. Forte, &amp; P. Gli&scaron;ovi&cacute;</p>
+                        <p class="entry-venue">EGU General Assembly 2026, Vienna, Austria (May 2026)</p>
+                        <p><a href="https://doi.org/10.5194/egusphere-egu26-15990" target="_blank" rel="noopener">doi.org/10.5194/egusphere-egu26-15990</a></p>
                     </div>
-                </div>
-                <div class="publication-item">
-                    <div class="publication-year">2025</div>
-                    <div class="publication-content">
+                </article>
+                <article class="entry">
+                    <div class="entry-label">2025</div>
+                    <div>
                         <h3>Playing with Edges: The Influence of Arbitrary Definitions on Hotspot&ndash;LLSVP Correlations</h3>
-                        <p class="publication-authors"><strong>Johnston, G.</strong>, Liu, S., Forte, A., &amp; Gli&scaron;ovi&cacute;, P.</p>
-                        <p class="publication-venue">EGU General Assembly 2025, Vienna, Austria</p>
-                        <p class="publication-doi">DOI: <a href="https://doi.org/10.5281/zenodo.14740086" target="_blank">10.5281/zenodo.14740086</a></p>
+                        <p class="entry-authors"><strong>G. Johnston</strong>, S. Liu, A. Forte, &amp; P. Gli&scaron;ovi&cacute;</p>
+                        <p class="entry-venue">EGU General Assembly 2025, Vienna, Austria (April 2025)</p>
+                        <p><a href="https://doi.org/10.5281/zenodo.14740086" target="_blank" rel="noopener">doi.org/10.5281/zenodo.14740086</a></p>
                     </div>
-                </div>
-                <div class="publication-item">
-                    <div class="publication-year">2024</div>
-                    <div class="publication-content">
+                </article>
+                <article class="entry">
+                    <div class="entry-label">2024</div>
+                    <div>
                         <h3>Towards a New Geodynamic and Geochemical Reconciliation of the Origin of the DUPAL Geochemical Anomaly in the South Atlantic and Southwest Indian Oceans</h3>
-                        <p class="publication-authors"><strong>Johnston, G.</strong>, Forte, A., Gli&scaron;ovi&cacute;, P., Chauvel, C., Farnetani, C., &amp; Robert, B.</p>
-                        <p class="publication-venue">Ada Lovelace Workshop on Modelling Mantle and Lithosphere Dynamics, S&egrave;te, France</p>
-                        <p class="publication-doi">DOI: <a href="https://doi.org/10.5281/zenodo.14706576" target="_blank">10.5281/zenodo.14706576</a></p>
+                        <p class="entry-authors"><strong>G. Johnston</strong>, A. Forte, P. Gli&scaron;ovi&cacute;, C. Chauvel, C. Farnetani, &amp; B. Robert</p>
+                        <p class="entry-venue">Ada Lovelace Workshop on Modelling Mantle and Lithosphere Dynamics, S&egrave;te, France (September 2024)</p>
+                        <p><a href="https://doi.org/10.5281/zenodo.14706576" target="_blank" rel="noopener">doi.org/10.5281/zenodo.14706576</a></p>
                     </div>
-                </div>
-                <div class="publication-item">
-                    <div class="publication-year">2022</div>
-                    <div class="publication-content">
-                        <h3>Testing Models for Three-Component Mantle Heterogeneity as Recorded in Compositions of Lavas from the Off-Axis 8&deg;20' N Seamount Chain</h3>
-                        <p class="publication-authors">Anderson, M., Perfit, M., Graham, D. W., &amp; <strong>Johnston, G.</strong></p>
-                        <p class="publication-venue">Goldschmidt 2022</p>
-                        <p class="publication-doi">DOI: <a href="https://doi.org/10.46427/gold2022.12742" target="_blank">10.46427/gold2022.12742</a></p>
+                </article>
+                <article class="entry">
+                    <div class="entry-label">2022</div>
+                    <div>
+                        <h3>Testing Models for Three-Component Mantle Heterogeneity as Recorded in Compositions of Lavas from the Off-Axis 8&deg;20&prime; N Seamount Chain</h3>
+                        <p class="entry-authors">M. Anderson, M. Perfit, D. W. Graham, &amp; <strong>G. Johnston</strong></p>
+                        <p class="entry-venue">Goldschmidt 2022 (July 2022)</p>
+                        <p><a href="https://doi.org/10.46427/gold2022.12742" target="_blank" rel="noopener">doi.org/10.46427/gold2022.12742</a></p>
                     </div>
-                </div>
-                <div class="publication-item">
-                    <div class="publication-year">2021</div>
-                    <div class="publication-content">
+                </article>
+                <article class="entry">
+                    <div class="entry-label">2021</div>
+                    <div>
                         <h3>Time-Dependent Convective Modelling of DUPAL Signatures in the South Atlantic: Implications for LLSVP Source Region</h3>
-                        <p class="publication-authors"><strong>Johnston, G.</strong>, Forte, A., &amp; Gli&scaron;ovi&cacute;, P.</p>
-                        <p class="publication-venue">AGU Fall Meeting 2021, New Orleans, LA</p>
-                        <p class="publication-id">ID: DI44B-07</p>
+                        <p class="entry-authors"><strong>G. Johnston</strong>, A. Forte, &amp; P. Gli&scaron;ovi&cacute;</p>
+                        <p class="entry-venue">AGU Fall Meeting 2021, New Orleans, LA (December 2021)</p>
+                        <p>Abstract DI44B-07 &middot; Bibcode 2021AGUFMDI44B..07J</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects & Hackathons -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2>Projects &amp; Workshops</h2>
-                <div class="divider"></div>
+        <!-- Positions & Education -->
+        <section id="positions" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Positions &amp; Education</h2>
+                    <div class="divider"></div>
+                </div>
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <span class="timeline-dot" aria-hidden="true"><i class="fas fa-building-columns"></i></span>
+                        <div class="card">
+                            <span class="pill">September 2026 &ndash; Present</span>
+                            <h3>Courtesy Assistant Professor</h3>
+                            <p class="org">Department of Geological Sciences, University of Florida, Gainesville, FL</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-dot" aria-hidden="true"><i class="fas fa-chalkboard-user"></i></span>
+                        <div class="card">
+                            <span class="pill">September 2026 &ndash; Present</span>
+                            <h3>Adjunct Faculty, Earth Sciences</h3>
+                            <p class="org">St. Petersburg College, St. Petersburg, FL</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-dot" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span>
+                        <div class="card">
+                            <span class="pill">Fall 2020 &ndash; Summer 2026</span>
+                            <h3>PhD, Geology</h3>
+                            <p class="org">University of Florida, Gainesville, FL</p>
+                            <p>Thesis: <em>Reconciling Hotspot Geochemistry with Mantle Dynamics through Particle Tracking</em><br>
+                            Advisor: Professor Alessandro Forte<br>
+                            Coursework and research in conjunction with the Institut de Physique du Globe de Paris (IPGP)</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-dot" aria-hidden="true"><i class="fas fa-earth-europe"></i></span>
+                        <div class="card">
+                            <span class="pill">June &ndash; December 2025</span>
+                            <h3>Invited Scientist</h3>
+                            <p class="org">Institut de Physique du Globe de Paris, Paris, France</p>
+                            <p>Worked with an international research team on reconciling geochemical observations with mantle convection models.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-dot" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span>
+                        <div class="card">
+                            <span class="pill">May 2019</span>
+                            <h3>Bachelor of Arts, Astronomy and French Literature</h3>
+                            <p class="org">University of Florida, Gainesville, FL</p>
+                            <p>Minors: Physics, Geology, Music Performance</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-dot" aria-hidden="true"><i class="fas fa-star"></i></span>
+                        <div class="card">
+                            <span class="pill">Fall 2018 &ndash; Fall 2019</span>
+                            <h3>Undergraduate Research in Star Formation</h3>
+                            <p class="org">University of Florida</p>
+                            <p>Developed Python code for near-infrared photometry and photometric analysis as part of the Galactic Census of High and Medium-mass Protostars (CHaMP) under Dr. Peter Barnes.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-dot" aria-hidden="true"><i class="fas fa-plane"></i></span>
+                        <div class="card">
+                            <span class="pill">Spring 2016 &ndash; Fall 2016</span>
+                            <h3>Year Abroad</h3>
+                            <p class="org">Universit&eacute; Paris Diderot &amp; Institut Catholique de Paris, Paris, France</p>
+                            <p>Studied literature and astronomy. At Coll&egrave;ge Robert Doisneau, taught English to French middle school students and assisted in research on language pedagogy under Professors Yamina Bonin and Laetitia Boisdron.</p>
+                        </div>
+                    </li>
+                </ol>
             </div>
-            <div class="projects-container">
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-earth-americas"></i></div>
-                    <div class="project-content">
-                        <h3>CLEEDI 2025</h3>
-                        <span class="project-date">September 2025 &middot; Tarascon-sur-Ari&egrave;ge, France</span>
-                        <p>CoLlaborative Exploration of Earth's Deep Interior &mdash; international workshop on deep mantle structure and dynamics.</p>
-                    </div>
-                </div>
+        </section>
 
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-code"></i></div>
-                    <div class="project-content">
-                        <h3>ASPECT Hackathon</h3>
-                        <span class="project-date">May 2024</span>
-                        <p>Advanced Solver for Planetary Evolution, Convection, and Tectonics</p>
-                        <ul class="project-details">
-                            <li>Worked on benchmarks for C++ particle tracking methods in mantle convection</li>
-                            <li>Evaluated alternative Runge&ndash;Kutta schemes, including the 3/8th method</li>
-                            <li>Performed cost-benefit analysis and tested feasibility of embedded methods in ASPECT</li>
-                        </ul>
-                    </div>
+        <!-- Teaching -->
+        <section id="teaching" class="section alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Teaching</h2>
+                    <div class="divider"></div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-route"></i></div>
-                    <div class="project-content">
-                        <h3>Advanced Particle Tracking in Mantle Convection</h3>
-                        <span class="project-date">2021 &ndash; Present</span>
-                        <p>Development of numerical methods for tracking particles in 4D flow fields</p>
-                        <ul class="project-details">
-                            <li>Created algorithms for efficient tracking of compositional heterogeneities in time-dependent flow fields</li>
-                            <li>Implemented backward-in-time tracking for hotspot source determination</li>
-                            <li>Developed visualization tools for 4D particle trajectories</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-satellite"></i></div>
-                    <div class="project-content">
-                        <h3>CHaMP &mdash; Galactic Census of High and Medium-mass Protostars</h3>
-                        <span class="project-date">2018 &ndash; 2019</span>
-                        <p>Undergraduate research in star formation under Dr. Peter Barnes</p>
-                        <ul class="project-details">
-                            <li>Developed Python code for near-infrared photometry and photometric analysis</li>
-                            <li>Analyzed data from multiple telescope observations</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Teaching -->
-    <section class="teaching">
-        <div class="container">
-            <div class="section-header">
-                <h2>Teaching Experience</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="teaching-grid">
-                <div class="teaching-card">
-                    <div class="teaching-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                    <div class="teaching-content">
+                <div class="grid-2">
+                    <div class="card">
+                        <span class="pill">Fall 2020 &ndash; Summer 2026</span>
                         <h3>Instructor of Record</h3>
-                        <span class="teaching-date">Fall 2020 &ndash; Present</span>
-                        <p class="teaching-institution">Florida Geology Lab, University of Florida</p>
-                        <p>Served as instructor of record on five occasions, independently running the course. Designed lectures, created field trips and assessments.</p>
+                        <p class="org">Florida Geology Lab, University of Florida</p>
+                        <ul class="bullets">
+                            <li>Served as instructor of record for five semesters, independently running the course</li>
+                            <li>Designed lectures and created field trips and assessments</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="teaching-card">
-                    <div class="teaching-icon"><i class="fas fa-users"></i></div>
-                    <div class="teaching-content">
+                    <div class="card">
+                        <span class="pill">Fall 2020 &ndash; Summer 2026</span>
                         <h3>Teaching Assistant</h3>
-                        <span class="teaching-date">Fall 2020 &ndash; Present</span>
-                        <p class="teaching-institution">University of Florida</p>
-                        <p>Assisted in instruction and grading for multiple geology courses. Led field trips to various destinations in Florida.</p>
-                        <ul class="teaching-courses">
-                            <li>IDS 2935 &mdash; Is the Planet Dying?</li>
-                            <li>GLY 3163 &mdash; Geology of American National Parks</li>
-                            <li>ESC 1000 &mdash; Introduction to Earth Science</li>
-                            <li>GLY 1102 &mdash; Age of Dinosaurs</li>
-                            <li>GLY 2030C &mdash; Environmental/Engineering Geology</li>
+                        <p class="org">University of Florida</p>
+                        <ul class="bullets">
+                            <li>Assisted in instruction and grading, and led field trips around Florida</li>
+                            <li>IDS 2935 &ndash; Is the Planet Dying?</li>
+                            <li>GLY 3163 &ndash; Geology of American National Parks</li>
+                            <li>ESC 1000 &ndash; Introduction to Earth Science</li>
+                            <li>GLY 1102 &ndash; Age of Dinosaurs</li>
+                            <li>GLY 2030C &ndash; Environmental/Engineering Geology</li>
+                            <li>GLY 2010 &ndash; Physical Geology</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills -->
-    <section class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2>Technical Skills</h2>
-                <div class="divider"></div>
+        <!-- Awards -->
+        <section id="awards" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Awards, Honors &amp; Funding</h2>
+                    <div class="divider"></div>
+                </div>
+                <ul class="rows">
+                    <li>
+                        <div class="row-main">
+                            <strong>John Ridge Award</strong>
+                            <span>$200, for outstanding achievement in research as a graduate student</span>
+                        </div>
+                        <div class="row-side">2026</div>
+                    </li>
+                    <li>
+                        <div class="row-main">
+                            <strong>Computational Infrastructure for Geodynamics (CIG) Travel Support</strong>
+                            <span>Up to $2,000 for travel to the Ada Lovelace Workshop, Prague, Czech Republic</span>
+                        </div>
+                        <div class="row-side">2026</div>
+                    </li>
+                    <li>
+                        <div class="row-main">
+                            <strong>Computational Infrastructure for Geodynamics (CIG) Travel Support</strong>
+                            <span>Up to $2,000 for travel to the Ada Lovelace Workshop, S&egrave;te, France</span>
+                        </div>
+                        <div class="row-side">2024</div>
+                    </li>
+                    <li>
+                        <div class="row-main">
+                            <strong>Grinter Award</strong>
+                            <span>$4,000</span>
+                        </div>
+                        <div class="row-side">2024</div>
+                    </li>
+                    <li>
+                        <div class="row-main">
+                            <strong>Summer Sinks Fellowship</strong>
+                            <span>$3,250</span>
+                        </div>
+                        <div class="row-side">2022</div>
+                    </li>
+                </ul>
             </div>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 95%;"></div>
-                            </div>
-                            <span class="skill-label">Highly Fluent</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">C++</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 75%;"></div>
-                            </div>
-                            <span class="skill-label">Proficient</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Fortran</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 60%;"></div>
-                            </div>
-                            <span class="skill-label">Competent</span>
-                        </div>
-                    </div>
-                </div>
+        </section>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Software &amp; Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">ASPECT</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                            <span class="skill-label">Advanced</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">GMT (Generic Mapping Tools)</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 80%;"></div>
-                            </div>
-                            <span class="skill-label">Proficient</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Scientific Data Visualization</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 90%;"></div>
-                            </div>
-                            <span class="skill-label">Expert</span>
-                        </div>
-                    </div>
+        <!-- Workshops -->
+        <section id="workshops" class="section alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Workshops &amp; Hackathons</h2>
+                    <div class="divider"></div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-language"></i> Languages</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">English</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 100%;"></div>
-                            </div>
-                            <span class="skill-label">Native</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">French</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 90%;"></div>
-                            </div>
-                            <span class="skill-label">Professionally Fluent</span>
-                        </div>
+                <div class="grid-2">
+                    <div class="card">
+                        <span class="pill">September 2025</span>
+                        <h3>CLEEDI 2025</h3>
+                        <p class="org">Tarascon-sur-Ari&egrave;ge, France</p>
+                        <p>CoLlaborative Exploration of Earth&rsquo;s Deep Interior.</p>
+                    </div>
+                    <div class="card">
+                        <span class="pill">May 2024</span>
+                        <h3>ASPECT Hackathon</h3>
+                        <p class="org">Advanced Solver for Planetary Evolution, Convection, and Tectonics</p>
+                        <ul class="bullets">
+                            <li>Worked on C++ benchmarks for particle tracking methods in mantle convection</li>
+                            <li>Evaluated alternative Runge&ndash;Kutta schemes, including the 3/8 method, with a cost&ndash;benefit analysis and a feasibility test of embedded methods in ASPECT</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Awards -->
-    <section class="awards">
-        <div class="container">
-            <div class="section-header">
-                <h2>Awards &amp; Grants</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="awards-container">
-                <div class="award-item">
-                    <div class="award-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div class="award-content">
-                        <h3>Grinter Award</h3>
-                        <span class="award-year">2024</span>
-                        <p class="award-value">$4,000</p>
-                        <p class="award-description">Awarded for excellence in graduate research and academic achievement.</p>
-                    </div>
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Skills &amp; Affiliations</h2>
+                    <div class="divider"></div>
                 </div>
-                <div class="award-item">
-                    <div class="award-icon">
-                        <i class="fas fa-trophy"></i>
+                <dl class="skill-table">
+                    <div>
+                        <dt>Programming</dt>
+                        <dd>Python, C++, Fortran</dd>
                     </div>
-                    <div class="award-content">
-                        <h3>Summer Sinks Fellowship</h3>
-                        <span class="award-year">2022</span>
-                        <p class="award-value">$3,250</p>
-                        <p class="award-description">Summer research fellowship for exceptional graduate students in the Geosciences.</p>
+                    <div>
+                        <dt>Numerical methods</dt>
+                        <dd>Lagrangian particle tracking (adaptive Runge&ndash;Kutta, DOP853), time-reversed mantle convection, 3D voxel analysis</dd>
                     </div>
-                </div>
+                    <div>
+                        <dt>Statistics</dt>
+                        <dd>Monte Carlo hypothesis testing (Kolmogorov&ndash;Smirnov, Anderson&ndash;Darling, Cram&eacute;r&ndash;von Mises)</dd>
+                    </div>
+                    <div>
+                        <dt>Software</dt>
+                        <dd>ASPECT, GMT</dd>
+                    </div>
+                    <div>
+                        <dt>High-performance computing</dt>
+                        <dd>NSF ACCESS Delta (NCSA), Linux/Slurm</dd>
+                    </div>
+                    <div>
+                        <dt>Languages</dt>
+                        <dd>English (native), French (professionally fluent)</dd>
+                    </div>
+                    <div>
+                        <dt>Affiliations</dt>
+                        <dd>European Geosciences Union, American Geophysical Union</dd>
+                    </div>
+                </dl>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Professional Affiliations -->
-    <section class="affiliations">
-        <div class="container">
-            <div class="section-header">
-                <h2>Professional Affiliations</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="affiliations-grid">
-                <div class="affiliation-item">
-                    <i class="fas fa-globe"></i>
-                    <span>European Geosciences Union (EGU)</span>
+        <!-- CV -->
+        <section class="band">
+            <div class="container band-cta">
+                <div>
+                    <h2>Curriculum Vitae</h2>
+                    <p>The full academic CV as a PDF.</p>
                 </div>
-                <div class="affiliation-item">
-                    <i class="fas fa-globe-americas"></i>
-                    <span>American Geophysical Union (AGU)</span>
-                </div>
+                <a href="docs/Gabriel_Johnston_CV.pdf" target="_blank" rel="noopener" class="btn btn-light"><i class="fas fa-file-arrow-down" aria-hidden="true"></i> Download CV</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Download CV -->
-    <section class="download-cv">
-        <div class="container">
-            <div class="cv-container">
-                <div class="cv-text">
-                    <h2>Download My CV</h2>
-                    <p>For a complete overview of my academic background, research experience, and publications.</p>
-                </div>
-                <a href="docs/Gabriel_Johnston_CV.pdf" target="_blank" class="btn btn-primary cv-download">
-                    <i class="fas fa-file-download"></i> Download CV
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Gabriel Johnston</h3>
-                    <p>PhD Candidate in Geophysics &amp; Organist</p>
+            <div class="footer-top">
+                <div>
+                    <h2>Gabriel Johnston</h2>
+                    <p>Geophysicist &amp; Organist</p>
                 </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="academic.html">Academic</a></li>
-                        <li><a href="music.html">Music</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academic.html">Academic</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Gabriel Johnston. All rights reserved.</p>
-                <a href="#main-nav" class="back-to-top">
-                    <i class="fas fa-arrow-up"></i>
-                </a>
+                <p>&copy; 2026 Gabriel Johnston</p>
+                <a href="#main">Back to top <i class="fas fa-arrow-up" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
