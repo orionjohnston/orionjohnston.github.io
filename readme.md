@@ -1,6 +1,6 @@
 # Gabriel Johnston — personal website
 
-Live at https://orionjohnston.github.io/Website2/
+Live at https://orionjohnston.github.io/
 
 A static site with no build step: three HTML pages, one stylesheet, one script.
 
@@ -9,7 +9,8 @@ A static site with no build step: three HTML pages, one stylesheet, one script.
 | `index.html` | Home: introduction, featured recording, recent news, contact |
 | `academic.html` | Research, publications, presentations, positions, teaching, awards |
 | `music.html` | Recordings, professional experience, ensembles, teachers |
-| `404.html` | Not-found page served by GitHub Pages |
+| `404.html` | Not-found page; also forwards old `/Website2/...` links to the new address |
+| `robots.txt`, `sitemap.xml` | Tell search engines what to index |
 | `css/site.css` | All styles |
 | `js/script.js` | Mobile menu, click-to-play videos, homepage globe |
 | `images/` | Photos, video thumbnails, favicon |

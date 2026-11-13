@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Page not found | Gabriel Johnston</title>
     <meta name="robots" content="noindex">
-    <link rel="icon" href="/Website2/images/favicon.svg" type="image/svg+xml">
+    <script>
+        // The site used to live at /Website2/. Send old links to the same page at the new address.
+        (function () {
+            var path = location.pathname;
+            if (/^\/Website2(\/|$)/.test(path)) {
+                location.replace(path.replace(/^\/Website2\/?/, '/') + location.search + location.hash);
+            }
+        })();
+    </script>
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&amp;family=Open+Sans:ital,wght@0,400;0,600;1,400&amp;display=swap">
-    <link rel="stylesheet" href="/Website2/css/site.css">
+    <link rel="stylesheet" href="/css/site.css">
 </head>
 <body class="home-page">
     <nav id="main-nav" aria-label="Main">
         <div class="container">
-            <div class="logo"><a href="/Website2/">Gabriel Johnston</a></div>
+            <div class="logo"><a href="/">Gabriel Johnston</a></div>
         </div>
     </nav>
     <main class="not-found">
         <div class="container">
             <h1>Page not found</h1>
             <p>That page doesn&rsquo;t exist, or has moved.</p>
-            <a href="/Website2/" class="btn btn-accent">Back to the homepage</a>
+            <a href="/" class="btn btn-accent">Back to the homepage</a>
         </div>
     </main>
 </body>
