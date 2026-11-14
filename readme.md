@@ -1,6 +1,6 @@
 # Gabriel Johnston — personal website
 
-Live at https://orionjohnston.github.io/Website2/
+Live at https://orionjohnston.github.io
 
 A static site with no build step: three HTML pages, one stylesheet, one script.
 
